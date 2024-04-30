@@ -59,13 +59,7 @@ return total;
     /* to be implemented in part (b) */
     int y1 = firstDayOfYear(year);
     int days = dayOfYear(month, day, year);
-    while(days > 0){
-      if(y1 < 7)
-        y1++;
-      else 
-        y1 = 0;
-      days--;
-    }
-    return y1;
+    int returnDay = (y1 + days-1)%7;
+    return returnDay;
   }
 }

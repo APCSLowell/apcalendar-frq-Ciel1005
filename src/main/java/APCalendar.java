@@ -57,7 +57,7 @@ return total;
   public static int dayOfWeek(int month, int day, int year)
   {
     /* to be implemented in part (b) */
-    int y1 = firstDayOfYear(yaer);
+    int y1 = firstDayOfYear(year);
     int days = dayOfYear(month, day, year);
     while(days > 0){
       if(y1 < 7)
